@@ -1,0 +1,337 @@
+[syntax trees at end of refchecks]]// Scala source: Tweet.scala
+PackageDef(
+  Select( // sym=package model, sym.owner=package tutorial, sym.tpe=package tutorial.model, tpe=tutorial.model.type, tpe.sym=package model, tpe.sym.owner=package tutorial
+    Ident("tutorial"), // sym=package tutorial, sym.owner=package <root>, sym.tpe=package tutorial, tpe=tutorial.type, tpe.sym=package tutorial, tpe.sym.owner=package <root>,
+    "model")
+,
+
+  ClassDef( // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=<notype>, tpe.sym=<none>
+    MODULEVAR | SYNTHETICMETH | MONOMORPHIC, // flags=, annots=[org.slim3.datastore.ModelschemaVersion = 1]
+    "Tweet",
+    List(), // no type parameter
+    Template( // sym=value <local Tweet>, sym.owner=class Tweet, sym.tpe=<notype>, tpe=tutorial.model.Tweet, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+      List(class Object, trait ScalaObject), // parents
+      ValDef( // sym=<none>, sym.tpe=<notype>, tpe=<notype>, tpe.sym=<none>
+        0, // flags=, annots=List()
+        "_",
+        TypeTree(), // sym=<none>, tpe=<notype>, tpe.sym=<none>,
+        EmptyTree
+      ),
+      List( // body
+        DefDef( // sym=constructor Tweet, isPrimaryConstructor, sym.owner=class Tweet, sym.tpe=()tutorial.model.Tweet, tpe=<notype>, tpe.sym=<none>
+          METHOD, // flags=<method>, annots=List()
+          "<init>",
+          List(), // no type parameter
+          List(List()), // no parameter
+          tutorial.model.Tweet,
+          Block( // sym=null, tpe=Unit, tpe.sym=class Unit, tpe.sym.owner=package scala
+            List( // 1 statement(s)
+              Apply( // sym=constructor Object, tpe=java.lang.Object, tpe.sym=class Object, tpe.sym.owner=package lang
+                Select( // sym=constructor Object, isPrimaryConstructor, sym.owner=class Object, sym.tpe=()java.lang.Object, tpe=()java.lang.Object, tpe.sym=<none>
+                  Super("", ""), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.super.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Object: ()java.lang.Object, , method getClass: ()java.lang.Class[_], , method hashCode: ()Int, , method equals: (x$1: Any)Boolean, , method clone: ()java.lang.Object, , method toString: ()java.lang.String, , method notify: ()Unit, , method notifyAll: ()Unit, , method wait: (x$1: Long)Unit, , method wait: (x$1: Long,x$2: Int)Unit, , method wait: ()Unit, , method finalize: ()Unit, , method ##: ()Int, , method ==: (x$1: AnyRef)Boolean, , method !=: (x$1: AnyRef)Boolean, , method eq: (x$1: AnyRef)Boolean, , method ne: (x$1: AnyRef)Boolean, , method synchronized: [T0](x$1: T0)T0, , method $isInstanceOf: [T0]()Boolean, , method $asInstanceOf: [T0]()T0, ),
+                  "<init>"),
+                Nil // no argument
+              )
+            ),
+            Literal(Constant(()))
+          )
+        ),
+        ValDef( // sym=variable key, sym.owner=class Tweet, sym.tpe=com.google.appengine.api.datastore.Key, tpe=<notype>, tpe.sym=<none>
+          PRIVATE | MUTABLE | LOCAL, // flags=private <mutable> <local>, annots=[org.slim3.datastore.AttributeprimaryKey = true,scala.reflect.BeanProperty]
+          "key ",
+          TypeTree(), // sym=class Key, tpe=com.google.appengine.api.datastore.Key, tpe.sym=class Key, tpe.sym.owner=package datastore,
+          EmptyTree
+        ),
+        DefDef( // sym=method key, sym.owner=class Tweet, sym.tpe==> com.google.appengine.api.datastore.Key, tpe=<notype>, tpe.sym=<none>
+          METHOD | ACCESSOR, // flags=<method> <accessor>, annots=List()
+          "key",
+          List(), // no type parameter
+          List(
+          ),
+          com.google.appengine.api.datastore.Key,
+          Select( // sym=variable key, sym.owner=class Tweet, sym.tpe=com.google.appengine.api.datastore.Key, tpe=com.google.appengine.api.datastore.Key, tpe.sym=class Key, tpe.sym.owner=package datastore
+            This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+            "key ")
+        ),
+        DefDef( // sym=method key_=, sym.owner=class Tweet, sym.tpe=(x$1: com.google.appengine.api.datastore.Key)Unit, tpe=<notype>, tpe.sym=<none>
+          METHOD | ACCESSOR, // flags=<method> <accessor>, annots=List()
+          "key_$eq",
+          List(), // no type parameter
+          List(
+            List( // 1 parameter(s)
+              ValDef( // sym=parameter of setter key_=, sym.owner=method key_=, sym.tpe=com.google.appengine.api.datastore.Key, tpe=<notype>, tpe.sym=<none>
+                PARAM | SYNTHETIC, // flags=<param> <synthetic>, annots=List()
+                "x$1",
+                TypeTree(), // sym=class Key, tpe=com.google.appengine.api.datastore.Key, tpe.sym=class Key, tpe.sym.owner=package datastore,
+                EmptyTree
+              )
+            )
+          ),
+          Unit,
+          Assign(
+            Select( // sym=variable key, sym.owner=class Tweet, sym.tpe=com.google.appengine.api.datastore.Key, tpe=com.google.appengine.api.datastore.Key, tpe.sym=class Key, tpe.sym.owner=package datastore
+              This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+              "key ")
+            Ident("x$1") // sym=parameter of setter key_=, sym.owner=method key_=, sym.tpe=com.google.appengine.api.datastore.Key, tpe=com.google.appengine.api.datastore.Key, tpe.sym=class Key, tpe.sym.owner=package datastore
+          )
+        ),
+        DefDef( // sym=method setKey, sym.owner=class Tweet, sym.tpe=(x$1: com.google.appengine.api.datastore.Key)Unit, tpe=<notype>, tpe.sym=<none>
+          METHOD, // flags=<method>, annots=List()
+          "setKey",
+          List(), // no type parameter
+          List(
+            List( // 1 parameter(s)
+              ValDef( // sym=value x$1, sym.owner=method setKey, sym.tpe=com.google.appengine.api.datastore.Key, tpe=<notype>, tpe.sym=<none>
+                PARAM | SYNTHETIC, // flags=<param> <synthetic>, annots=List()
+                "x$1",
+                TypeTree(), // sym=class Key, tpe=com.google.appengine.api.datastore.Key, tpe.sym=class Key, tpe.sym.owner=package datastore,
+                EmptyTree
+              )
+            )
+          ),
+          Unit,
+          Assign(
+            Select( // sym=variable key, sym.owner=class Tweet, sym.tpe=com.google.appengine.api.datastore.Key, tpe=com.google.appengine.api.datastore.Key, tpe.sym=class Key, tpe.sym.owner=package datastore
+              This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+              "key ")
+            Ident("x$1") // sym=value x$1, sym.owner=method setKey, sym.tpe=com.google.appengine.api.datastore.Key, tpe=com.google.appengine.api.datastore.Key, tpe.sym=class Key, tpe.sym.owner=package datastore
+          )
+        ),
+        ValDef( // sym=variable version, sym.owner=class Tweet, sym.tpe=Long, tpe=<notype>, tpe.sym=<none>
+          PRIVATE | MUTABLE | LOCAL, // flags=private <mutable> <local>, annots=[org.slim3.datastore.Attributeversion = true,scala.reflect.BeanProperty]
+          "version ",
+          TypeTree(), // sym=class Long, tpe=Long, tpe.sym=class Long, tpe.sym.owner=package scala,
+          EmptyTree
+        ),
+        DefDef( // sym=method version, sym.owner=class Tweet, sym.tpe==> Long, tpe=<notype>, tpe.sym=<none>
+          METHOD | ACCESSOR, // flags=<method> <accessor>, annots=List()
+          "version",
+          List(), // no type parameter
+          List(
+          ),
+          Long,
+          Select( // sym=variable version, sym.owner=class Tweet, sym.tpe=Long, tpe=Long, tpe.sym=class Long, tpe.sym.owner=package scala
+            This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+            "version ")
+        ),
+        DefDef( // sym=method version_=, sym.owner=class Tweet, sym.tpe=(x$1: Long)Unit, tpe=<notype>, tpe.sym=<none>
+          METHOD | ACCESSOR, // flags=<method> <accessor>, annots=List()
+          "version_$eq",
+          List(), // no type parameter
+          List(
+            List( // 1 parameter(s)
+              ValDef( // sym=parameter of setter version_=, sym.owner=method version_=, sym.tpe=Long, tpe=<notype>, tpe.sym=<none>
+                PARAM | SYNTHETIC, // flags=<param> <synthetic>, annots=List()
+                "x$1",
+                TypeTree(), // sym=class Long, tpe=Long, tpe.sym=class Long, tpe.sym.owner=package scala,
+                EmptyTree
+              )
+            )
+          ),
+          Unit,
+          Assign(
+            Select( // sym=variable version, sym.owner=class Tweet, sym.tpe=Long, tpe=Long, tpe.sym=class Long, tpe.sym.owner=package scala
+              This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+              "version ")
+            Ident("x$1") // sym=parameter of setter version_=, sym.owner=method version_=, sym.tpe=Long, tpe=Long, tpe.sym=class Long, tpe.sym.owner=package scala
+          )
+        ),
+        DefDef( // sym=method setVersion, sym.owner=class Tweet, sym.tpe=(x$1: Long)Unit, tpe=<notype>, tpe.sym=<none>
+          METHOD, // flags=<method>, annots=List()
+          "setVersion",
+          List(), // no type parameter
+          List(
+            List( // 1 parameter(s)
+              ValDef( // sym=value x$1, sym.owner=method setVersion, sym.tpe=Long, tpe=<notype>, tpe.sym=<none>
+                PARAM | SYNTHETIC, // flags=<param> <synthetic>, annots=List()
+                "x$1",
+                TypeTree(), // sym=class Long, tpe=Long, tpe.sym=class Long, tpe.sym.owner=package scala,
+                EmptyTree
+              )
+            )
+          ),
+          Unit,
+          Assign(
+            Select( // sym=variable version, sym.owner=class Tweet, sym.tpe=Long, tpe=Long, tpe.sym=class Long, tpe.sym.owner=package scala
+              This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+              "version ")
+            Ident("x$1") // sym=value x$1, sym.owner=method setVersion, sym.tpe=Long, tpe=Long, tpe.sym=class Long, tpe.sym.owner=package scala
+          )
+        ),
+        ValDef( // sym=variable content, sym.owner=class Tweet, sym.tpe=String, tpe=<notype>, tpe.sym=<none>
+          PRIVATE | MUTABLE | LOCAL, // flags=private <mutable> <local>, annots=[scala.reflect.BeanProperty]
+          "content ",
+          TypeTree(), // sym=class String, tpe=String, tpe.sym=class String, tpe.sym.owner=package lang,
+          EmptyTree
+        ),
+        DefDef( // sym=method content, sym.owner=class Tweet, sym.tpe==> String, tpe=<notype>, tpe.sym=<none>
+          METHOD | ACCESSOR, // flags=<method> <accessor>, annots=List()
+          "content",
+          List(), // no type parameter
+          List(
+          ),
+          String,
+          Select( // sym=variable content, sym.owner=class Tweet, sym.tpe=String, tpe=String, tpe.sym=class String, tpe.sym.owner=package lang
+            This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+            "content ")
+        ),
+        DefDef( // sym=method content_=, sym.owner=class Tweet, sym.tpe=(x$1: String)Unit, tpe=<notype>, tpe.sym=<none>
+          METHOD | ACCESSOR, // flags=<method> <accessor>, annots=List()
+          "content_$eq",
+          List(), // no type parameter
+          List(
+            List( // 1 parameter(s)
+              ValDef( // sym=parameter of setter content_=, sym.owner=method content_=, sym.tpe=String, tpe=<notype>, tpe.sym=<none>
+                PARAM | SYNTHETIC, // flags=<param> <synthetic>, annots=List()
+                "x$1",
+                TypeTree(), // sym=class String, tpe=String, tpe.sym=class String, tpe.sym.owner=package lang,
+                EmptyTree
+              )
+            )
+          ),
+          Unit,
+          Assign(
+            Select( // sym=variable content, sym.owner=class Tweet, sym.tpe=String, tpe=String, tpe.sym=class String, tpe.sym.owner=package lang
+              This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+              "content ")
+            Ident("x$1") // sym=parameter of setter content_=, sym.owner=method content_=, sym.tpe=String, tpe=String, tpe.sym=class String, tpe.sym.owner=package lang
+          )
+        ),
+        DefDef( // sym=method setContent, sym.owner=class Tweet, sym.tpe=(x$1: String)Unit, tpe=<notype>, tpe.sym=<none>
+          METHOD, // flags=<method>, annots=List()
+          "setContent",
+          List(), // no type parameter
+          List(
+            List( // 1 parameter(s)
+              ValDef( // sym=value x$1, sym.owner=method setContent, sym.tpe=String, tpe=<notype>, tpe.sym=<none>
+                PARAM | SYNTHETIC, // flags=<param> <synthetic>, annots=List()
+                "x$1",
+                TypeTree(), // sym=class String, tpe=String, tpe.sym=class String, tpe.sym.owner=package lang,
+                EmptyTree
+              )
+            )
+          ),
+          Unit,
+          Assign(
+            Select( // sym=variable content, sym.owner=class Tweet, sym.tpe=String, tpe=String, tpe.sym=class String, tpe.sym.owner=package lang
+              This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+              "content ")
+            Ident("x$1") // sym=value x$1, sym.owner=method setContent, sym.tpe=String, tpe=String, tpe.sym=class String, tpe.sym.owner=package lang
+          )
+        ),
+        ValDef( // sym=variable createdDate, sym.owner=class Tweet, sym.tpe=java.util.Date, tpe=<notype>, tpe.sym=<none>
+          PRIVATE | MUTABLE | LOCAL, // flags=private <mutable> <local>, annots=[scala.reflect.BeanProperty]
+          "createdDate ",
+          TypeTree(), // sym=class Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util,
+          Apply( // sym=constructor Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util
+            Select( // sym=constructor Date, isPrimaryConstructor, sym.owner=class Date, sym.tpe=()java.util.Date, tpe=()java.util.Date, tpe.sym=<none>
+              New( // sym=null, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util
+                Select( // sym=class Date, sym.owner=package util, sym.tpe=java.util.Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util
+                  Select( // sym=package util, sym.owner=package java, sym.tpe=package java.util, tpe=java.util.type, tpe.sym=package util, tpe.sym.owner=package java
+                    Ident("java"), // sym=package java, sym.owner=package <root>, sym.tpe=package java, tpe=java.type, tpe.sym=package java, tpe.sym.owner=package <root>,
+                    "util"),
+                  "Date")
+              ),
+              "<init>"),
+            Nil // no argument
+          )
+        ),
+        DefDef( // sym=method createdDate, sym.owner=class Tweet, sym.tpe==> java.util.Date, tpe=<notype>, tpe.sym=<none>
+          METHOD | ACCESSOR, // flags=<method> <accessor>, annots=List()
+          "createdDate",
+          List(), // no type parameter
+          List(
+          ),
+          java.util.Date,
+          Select( // sym=variable createdDate, sym.owner=class Tweet, sym.tpe=java.util.Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util
+            This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+            "createdDate ")
+        ),
+        DefDef( // sym=method createdDate_=, sym.owner=class Tweet, sym.tpe=(x$1: java.util.Date)Unit, tpe=<notype>, tpe.sym=<none>
+          METHOD | ACCESSOR, // flags=<method> <accessor>, annots=List()
+          "createdDate_$eq",
+          List(), // no type parameter
+          List(
+            List( // 1 parameter(s)
+              ValDef( // sym=parameter of setter createdDate_=, sym.owner=method createdDate_=, sym.tpe=java.util.Date, tpe=<notype>, tpe.sym=<none>
+                PARAM | SYNTHETIC, // flags=<param> <synthetic>, annots=List()
+                "x$1",
+                TypeTree(), // sym=class Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util,
+                EmptyTree
+              )
+            )
+          ),
+          Unit,
+          Assign(
+            Select( // sym=variable createdDate, sym.owner=class Tweet, sym.tpe=java.util.Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util
+              This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+              "createdDate ")
+            Ident("x$1") // sym=parameter of setter createdDate_=, sym.owner=method createdDate_=, sym.tpe=java.util.Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util
+          )
+        ),
+        DefDef( // sym=method setCreatedDate, sym.owner=class Tweet, sym.tpe=(x$1: java.util.Date)Unit, tpe=<notype>, tpe.sym=<none>
+          METHOD, // flags=<method>, annots=List()
+          "setCreatedDate",
+          List(), // no type parameter
+          List(
+            List( // 1 parameter(s)
+              ValDef( // sym=value x$1, sym.owner=method setCreatedDate, sym.tpe=java.util.Date, tpe=<notype>, tpe.sym=<none>
+                PARAM | SYNTHETIC, // flags=<param> <synthetic>, annots=List()
+                "x$1",
+                TypeTree(), // sym=class Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util,
+                EmptyTree
+              )
+            )
+          ),
+          Unit,
+          Assign(
+            Select( // sym=variable createdDate, sym.owner=class Tweet, sym.tpe=java.util.Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util
+              This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+              "createdDate ")
+            Ident("x$1") // sym=value x$1, sym.owner=method setCreatedDate, sym.tpe=java.util.Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util
+          )
+        ),
+        DefDef( // sym=method getCreatedDate, sym.owner=class Tweet, sym.tpe=()java.util.Date, tpe=<notype>, tpe.sym=<none>
+          METHOD, // flags=<method>, annots=List()
+          "getCreatedDate",
+          List(), // no type parameter
+          List(List()), // no parameter
+          java.util.Date,
+          Select( // sym=method createdDate, sym.owner=class Tweet, sym.tpe==> java.util.Date, tpe=java.util.Date, tpe.sym=class Date, tpe.sym.owner=package util
+            This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+            "createdDate")
+        ),
+        DefDef( // sym=method getContent, sym.owner=class Tweet, sym.tpe=()String, tpe=<notype>, tpe.sym=<none>
+          METHOD, // flags=<method>, annots=List()
+          "getContent",
+          List(), // no type parameter
+          List(List()), // no parameter
+          String,
+          Select( // sym=method content, sym.owner=class Tweet, sym.tpe==> String, tpe=String, tpe.sym=class String, tpe.sym.owner=package lang
+            This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+            "content")
+        ),
+        DefDef( // sym=method getVersion, sym.owner=class Tweet, sym.tpe=()Long, tpe=<notype>, tpe.sym=<none>
+          METHOD, // flags=<method>, annots=List()
+          "getVersion",
+          List(), // no type parameter
+          List(List()), // no parameter
+          Long,
+          Select( // sym=method version, sym.owner=class Tweet, sym.tpe==> Long, tpe=Long, tpe.sym=class Long, tpe.sym.owner=package scala
+            This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+            "version")
+        ),
+        DefDef( // sym=method getKey, sym.owner=class Tweet, sym.tpe=()com.google.appengine.api.datastore.Key, tpe=<notype>, tpe.sym=<none>
+          METHOD, // flags=<method>, annots=List()
+          "getKey",
+          List(), // no type parameter
+          List(List()), // no parameter
+          com.google.appengine.api.datastore.Key,
+          Select( // sym=method key, sym.owner=class Tweet, sym.tpe==> com.google.appengine.api.datastore.Key, tpe=com.google.appengine.api.datastore.Key, tpe.sym=class Key, tpe.sym.owner=package datastore
+            This("Tweet"), // sym=class Tweet, sym.owner=package model, sym.tpe=tutorial.model.Tweet, tpe=Tweet.this.type, tpe.sym=class Tweet, tpe.sym.owner=package model, tpe.decls=List(constructor Tweet: ()tutorial.model.Tweet, , method key: => com.google.appengine.api.datastore.Key, , method key_=: (x$1: com.google.appengine.api.datastore.Key)Unit, , variable key: com.google.appengine.api.datastore.Key, , method getKey: ()com.google.appengine.api.datastore.Key, , method setKey: (x$1: com.google.appengine.api.datastore.Key)Unit, , method version: => Long, , method version_=: (x$1: Long)Unit, , variable version: Long, , method getVersion: ()Long, , method setVersion: (x$1: Long)Unit, , method content: => String, , method content_=: (x$1: String)Unit, , variable content: String, , method getContent: ()String, , method setContent: (x$1: String)Unit, , method createdDate: => java.util.Date, , method createdDate_=: (x$1: java.util.Date)Unit, , variable createdDate: java.util.Date, , method getCreatedDate: ()java.util.Date, , method setCreatedDate: (x$1: java.util.Date)Unit, )
+            "key")
+        )
+      )
+    )
+  )
+)

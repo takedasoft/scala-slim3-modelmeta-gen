@@ -1,0 +1,4 @@
+<plugin>
+  <name>slim3-meta-generate</name>
+  <classname>scalatohoku.slim3.ModelMetaGeneratorPlugin</classname>
+</plugin>

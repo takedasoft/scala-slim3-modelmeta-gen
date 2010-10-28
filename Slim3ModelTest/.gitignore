@@ -1,0 +1,47 @@
+# eclipse conf file
+.settings
+.classpath
+.project
+.manager
+
+# building
+target
+#build
+null
+tmp*
+#temp*
+dist
+test-output
+
+# other scm
+.svn
+.CVS
+.hg*
+
+# switch to regexp syntax.
+#  syntax: regexp
+#  ^\.pc/
+
+# 
+*.log
+lift_example
+
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+
+# NetBeans
+nbproject/private
+
+#sbt
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/build/target
+
+
+src/main/scala/tutorial/meta
+
