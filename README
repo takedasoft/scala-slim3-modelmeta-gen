@@ -1,13 +1,13 @@
 ===================================
 
-Slim3 ModelMeta ‚ğScala‚Å¶¬‚µ‚Ü‚·
+Slim3 ModelMeta ã‚’Scalaã§ç”Ÿæˆã—ã¾ã™
 
-CompilerPlugin‚ğ—˜—p‚µ‚½APT‚Ì‘ã‘ÖˆÄ‚ÅAƒAƒCƒfƒBƒAƒŒƒxƒ‹‚ÌƒR[ƒh‚Å‚·B
+CompilerPluginã‚’åˆ©ç”¨ã—ãŸAPTã®ä»£æ›¿æ¡ˆã§ã€ã‚¢ã‚¤ãƒ‡ã‚£ã‚¢ãƒ¬ãƒ™ãƒ«ã®ã‚³ãƒ¼ãƒ‰ã§ã™ã€‚
 
 ===================================
 
-Slim3ModelMetaGeneratorPlugin : ƒRƒ“ƒpƒCƒ‰ƒvƒ‰ƒOƒCƒ“–{‘Ì
-Slim3ModelTest : ƒ‚ƒfƒ‹‚©‚çModelMeta‚ğ¶¬‚·‚éƒeƒXƒgƒvƒƒWƒFƒNƒg
+Slim3ModelMetaGeneratorPlugin : ã‚³ãƒ³ãƒ‘ã‚¤ãƒ©ãƒ—ãƒ©ã‚°ã‚¤ãƒ³æœ¬ä½“
+Slim3ModelTest : ãƒ¢ãƒ‡ãƒ«ã‹ã‚‰ModelMetaã‚’ç”Ÿæˆã™ã‚‹ãƒ†ã‚¹ãƒˆãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆ
 
 > cd Slim3ModelMetaGeneratorPlugin
 > sbt package
@@ -15,11 +15,11 @@ Slim3ModelTest : ƒ‚ƒfƒ‹‚©‚çModelMeta‚ğ¶¬‚·‚éƒeƒXƒgƒvƒƒWƒFƒNƒg
 > cd ../Slim3ModelTest
 > sbt compile
 
-ã‹L‘€ì‚ÅA
+ä¸Šè¨˜æ“ä½œã§ã€
 
 Slim3ModelTest/src/main/scala/tutorial/meta/TweetMeta.scala
 
-‚ğ¶¬‚µ‚Ü‚·B
+ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
 
 
