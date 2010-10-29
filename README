@@ -22,5 +22,12 @@ Slim3ModelTest/src/main/scala/tutorial/meta/TweetMeta.scala
 を生成します。
 
 
+===================================
+TODO:
 
+* Slim3 Datastoreの例題でコンパイル通るようにする。
+http://sites.google.com/site/slim3appengine/slim3-datastore
+
+* GAEで動作を確認
+* Scalatraと連携
 

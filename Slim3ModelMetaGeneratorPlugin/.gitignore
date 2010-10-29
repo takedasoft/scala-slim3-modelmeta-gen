@@ -33,7 +33,9 @@ lift_example
 *.iws
 
 # NetBeans
-nbproject/private
+nbproject
+build.xml
+manifest.mf
 
 #sbt
 target/
