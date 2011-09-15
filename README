@@ -10,7 +10,7 @@ Slim3ModelMetaGeneratorPlugin : コンパイラプラグイン本体
 Slim3ModelTest : モデルからModelMetaを生成するテストプロジェクト
 
 > cd Slim3ModelMetaGeneratorPlugin
-> sbt package
+> sbt publish-local
 
 > cd ../Slim3ModelTest
 > sbt compile
@@ -30,4 +30,5 @@ http://sites.google.com/site/slim3appengine/slim3-datastore
 
 * GAEで動作を確認
 * Scalatraと連携
+* 各種annotationのサポート https://sites.google.com/site/slim3documentja/documents/slim3-datastore/defining-data-classes
 
