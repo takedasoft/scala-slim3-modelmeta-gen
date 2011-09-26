@@ -30,5 +30,5 @@ http://sites.google.com/site/slim3appengine/slim3-datastore
 
 * GAEで動作を確認
 * Scalatraと連携
-* 各種annotationのサポート https://sites.google.com/site/slim3documentja/documents/slim3-datastore/defining-data-classes
+* Cipher Textのサポート https://sites.google.com/site/slim3documentja/documents/slim3-datastore/defining-data-classes#TOC-Cipher-Text
 
