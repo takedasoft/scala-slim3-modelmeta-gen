@@ -44,6 +44,8 @@ class ModelMetaGeneratorPlugin(val global: Global) extends Plugin {
                   case prop @ ValDef(mods,name,tpt,rhs) if hasAnotation(prop,"scala.reflect.BeanProperty") =>
                     p( "  <property>"+prop.name + ":" + prop.symbol.tpe.toLongString )
                     meta.props.put( prop.name.toString.trim, prop.symbol.tpe.toString )
+                    meta.annotations.put(prop.name.toString.trim, prop.symbol.annotations.map(_.toString))
+                    p("  <annotations>" + prop.symbol.annotations.map(_.toString()).mkString(","))
                   case method @ DefDef(mods,name,tparams,vparams,tpt,rhs) if isJavaAccessor(method) =>
                     ()//p( "  <accessor>"+method.name )
                   case _ => ()

@@ -82,4 +82,24 @@ class AllDataType {
     @BeanProperty
     var rate:com.google.appengine.api.datastore.Rating = _
 
+    @BeanProperty
+    var stringList:java.util.List[String] = _
+    
+    @BeanProperty
+    var keySet:java.util.TreeSet[Key] = _
+    
+    @BeanProperty
+    @Attribute(lob = true)
+    var obj: Test = _
+    
+    @BeanProperty
+    @Attribute(lob = true)
+    var bytes: Array[Byte] = _
+    
+    @BeanProperty
+    @Attribute(lob = true)
+    var longtext: String = _
 }
+
+
+class Test extends Serializable

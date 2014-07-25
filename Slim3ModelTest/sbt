@@ -1,2 +1,2 @@
 #!/bin/sh
-java -Drun.mode=production -XX:+CMSClassUnloadingEnabled -Xmx256M -Xss2M -XX:MaxPermSize=128m -jar `dirname $0`/sbt-launch-0.7.4.jar "$@"
+java -Drun.mode=production -XX:+CMSClassUnloadingEnabled -Xmx256M -Xss2M -XX:MaxPermSize=128m -jar `dirname $0`/sbt-launch-0.10.1.jar "$@"
